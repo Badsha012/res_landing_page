@@ -35,48 +35,66 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+
+      .shadow-soft {
+        box-shadow: 0 20px 70px rgba(15, 23, 42, 0.08);
+      }
+    </style>
   </head>
   <body class="bg-stone-50 text-stone-800">
-    <header class="bg-[url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center text-white">
-      <div class="bg-black/60">
+    <header class="relative overflow-hidden bg-[url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=80')] bg-cover bg-center text-white">
+      <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/40"></div>
+      <div class="relative">
         <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
-          <a href="#" class="text-2xl font-bold tracking-wide">Amika Bistro</a>
+          <a href="#" class="text-2xl font-semibold tracking-[0.18em] text-white">
+            <span class="font-extrabold text-orange-400">Pizza</span>
+            <span class="ml-2 font-light uppercase">Bar</span>
+          </a>
           <div class="hidden gap-6 text-sm font-medium md:flex">
             <a href="#menu" class="transition hover:text-orange-300">Menu</a>
             <a href="#about" class="transition hover:text-orange-300">About</a>
             <a href="#contact" class="transition hover:text-orange-300">Contact</a>
           </div>
-          <a
-            href="#contact"
-            class="rounded-full bg-orange-500 px-4 py-2 text-sm font-semibold transition hover:bg-orange-600"
-          >Reserve Now</a>
+          <a href="#contact" class="rounded-full bg-orange-500 px-4 py-2 text-sm font-semibold transition hover:bg-orange-600">Reserve</a>
         </nav>
 
         <div class="mx-auto grid max-w-7xl gap-8 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-28">
           <div class="max-w-2xl">
             <p class="mb-4 inline-block rounded-full border border-white/30 bg-white/10 px-4 py-1 text-sm uppercase tracking-[0.3em]">
-              Fine dining • cozy atmosphere
+              Fine Dining • Private Dining • Events
             </p>
             <h1 class="text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
-              Savor the taste of unforgettable evenings.
+              Where refined flavor meets unforgettable hospitality.
             </h1>
             <p class="mt-6 text-lg text-stone-200 sm:text-xl">
-              From handcrafted dishes to a warm ambiance, Amika Bistro creates the perfect setting for intimate dinners, celebrations, and relaxing nights out.
+              Discover a premium dining experience crafted with seasonal ingredients, elegant presentation, and a warm atmosphere that feels truly special.
             </p>
             <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="#menu"
-                class="rounded-full bg-orange-500 px-6 py-3 text-center font-semibold text-white transition hover:bg-orange-600"
-              >Explore Menu</a>
-              <a
-                href="#about"
-                class="rounded-full border border-white/50 px-6 py-3 text-center font-semibold text-white transition hover:bg-white/10"
-              >Why Choose Us</a>
+              <a href="#menu" class="rounded-full bg-orange-500 px-6 py-3 text-center font-semibold text-white transition hover:bg-orange-600">View Signature Menu</a>
+              <a href="#about" class="rounded-full border border-white/50 px-6 py-3 text-center font-semibold text-white transition hover:bg-white/10">Our Story</a>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-4 text-sm text-stone-200">
+              <div class="rounded-full border border-white/20 bg-white/10 px-4 py-2">Open Daily 11 AM – 11 PM</div>
+              <div class="rounded-full border border-white/20 bg-white/10 px-4 py-2">Luxury Indoor & Outdoor Seating</div>
             </div>
           </div>
 
-          <div class="rounded-3xl bg-white/90 p-6 text-stone-800 shadow-2xl">
-            <h2 class="text-2xl font-semibold">Today’s Special</h2>
+          <div class="rounded-[2rem] bg-white/95 p-6 text-stone-800 shadow-2xl backdrop-blur">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm font-semibold uppercase tracking-[0.3em] text-orange-600">Featured tonight</p>
+                <h2 class="mt-2 text-2xl font-semibold">Chef’s Signature Selection</h2>
+              </div>
+              <span class="rounded-full bg-orange-100 px-3 py-1 text-sm font-semibold text-orange-700">New</span>
+            </div>
             <div class="mt-4 space-y-4">
               <div class="rounded-2xl border border-stone-200 p-4">
                 <div class="flex items-center justify-between">
@@ -108,20 +126,20 @@
     <main>
       <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div class="grid gap-6 md:grid-cols-3">
-          <div class="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-stone-200">
+          <div class="rounded-[1.5rem] bg-white p-6 shadow-soft ring-1 ring-stone-200">
             <div class="mb-4 inline-flex rounded-2xl bg-orange-100 p-3 text-orange-600">✦</div>
-            <h3 class="text-xl font-semibold">Fresh Ingredients</h3>
-            <p class="mt-2 text-sm leading-6 text-stone-600">We source premium produce and local ingredients to make every bite vibrant and flavorful.</p>
+            <h3 class="text-xl font-semibold">Fresh Seasonal Ingredients</h3>
+            <p class="mt-2 text-sm leading-6 text-stone-600">We select premium produce and quality ingredients to create vibrant, balanced flavors every day.</p>
           </div>
-          <div class="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-stone-200">
+          <div class="rounded-[1.5rem] bg-white p-6 shadow-soft ring-1 ring-stone-200">
             <div class="mb-4 inline-flex rounded-2xl bg-orange-100 p-3 text-orange-600">★</div>
-            <h3 class="text-xl font-semibold">Chef’s Signature</h3>
-            <p class="mt-2 text-sm leading-6 text-stone-600">Every plate is crafted with passion, balancing comfort and elegance in each dish.</p>
+            <h3 class="text-xl font-semibold">Crafted by Expert Chefs</h3>
+            <p class="mt-2 text-sm leading-6 text-stone-600">Every plate reflects our passion for elegance, precision, and comfort in every bite.</p>
           </div>
-          <div class="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-stone-200">
+          <div class="rounded-[1.5rem] bg-white p-6 shadow-soft ring-1 ring-stone-200">
             <div class="mb-4 inline-flex rounded-2xl bg-orange-100 p-3 text-orange-600">☼</div>
-            <h3 class="text-xl font-semibold">Warm Hospitality</h3>
-            <p class="mt-2 text-sm leading-6 text-stone-600">From greeting to dessert, our team ensures your experience feels truly personal.</p>
+            <h3 class="text-xl font-semibold">Exceptional Hospitality</h3>
+            <p class="mt-2 text-sm leading-6 text-stone-600">From greeting to dessert, every detail is handled with warmth, professionalism, and care.</p>
           </div>
         </div>
       </section>
@@ -130,14 +148,14 @@
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
-              <p class="text-sm font-semibold uppercase tracking-[0.3em] text-orange-600">Popular dishes</p>
-              <h2 class="mt-2 text-3xl font-bold sm:text-4xl">Taste what everyone loves.</h2>
+              <p class="text-sm font-semibold uppercase tracking-[0.3em] text-orange-600">Signature dishes</p>
+              <h2 class="mt-2 text-3xl font-bold sm:text-4xl">A menu designed for memorable moments.</h2>
             </div>
-            <a href="#contact" class="text-sm font-semibold text-orange-600 hover:text-orange-700">Book a table →</a>
+            <a href="#contact" class="text-sm font-semibold text-orange-600 hover:text-orange-700">Reserve your table →</a>
           </div>
 
           <div class="mt-10 grid gap-6 md:grid-cols-3">
-            <div class="overflow-hidden rounded-3xl border border-stone-200 bg-stone-50">
+            <div class="overflow-hidden rounded-[1.5rem] border border-stone-200 bg-stone-50 shadow-sm">
               <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Crispy chicken dish" class="h-48 w-full object-cover" />
               <div class="p-6">
                 <div class="flex items-center justify-between">
@@ -147,7 +165,7 @@
                 <p class="mt-3 text-sm leading-6 text-stone-600">Golden crust, roasted garlic, and a smoky pepper glaze.</p>
               </div>
             </div>
-            <div class="overflow-hidden rounded-3xl border border-stone-200 bg-stone-50">
+            <div class="overflow-hidden rounded-[1.5rem] border border-stone-200 bg-stone-50 shadow-sm">
               <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=900&q=80" alt="Fresh pasta dish" class="h-48 w-full object-cover" />
               <div class="p-6">
                 <div class="flex items-center justify-between">
@@ -157,7 +175,7 @@
                 <p class="mt-3 text-sm leading-6 text-stone-600">Creamy arborio rice with roasted mushrooms and parmesan.</p>
               </div>
             </div>
-            <div class="overflow-hidden rounded-3xl border border-stone-200 bg-stone-50">
+            <div class="overflow-hidden rounded-[1.5rem] border border-stone-200 bg-stone-50 shadow-sm">
               <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=900&q=80" alt="Stack of pancakes" class="h-48 w-full object-cover" />
               <div class="p-6">
                 <div class="flex items-center justify-between">
@@ -175,9 +193,9 @@
         <div class="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
           <div>
             <p class="text-sm font-semibold uppercase tracking-[0.3em] text-orange-600">About Amika</p>
-            <h2 class="mt-3 text-3xl font-bold sm:text-4xl">A dining experience that feels like home.</h2>
+            <h2 class="mt-3 text-3xl font-bold sm:text-4xl">A refined dining experience that feels personal.</h2>
             <p class="mt-5 text-lg leading-8 text-stone-600">
-              Amika Bistro combines classic hospitality with contemporary flavors. Whether it is a date night, a family dinner, or a private celebration, our space is designed to bring people closer over exceptional food.
+              Amika Bistro blends classic hospitality with contemporary flavors to create a setting that is elegant, relaxed, and memorable for every guest.
             </p>
             <div class="mt-8 flex flex-wrap gap-4">
               <div class="rounded-2xl bg-orange-50 px-5 py-4">
@@ -205,24 +223,27 @@
 
       <section id="contact" class="bg-stone-900 py-16 text-white">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="grid gap-8 rounded-[2rem] bg-stone-800/80 p-8 lg:grid-cols-[1fr_0.8fr] lg:p-12">
+          <div class="grid gap-8 rounded-[2rem] bg-stone-800/80 p-8 lg:grid-cols-[1fr_0.9fr] lg:p-12">
             <div>
               <p class="text-sm font-semibold uppercase tracking-[0.3em] text-orange-400">Reserve your table</p>
-              <h2 class="mt-3 text-3xl font-bold sm:text-4xl">Make your next meal memorable.</h2>
+              <h2 class="mt-3 text-3xl font-bold sm:text-4xl">Make your next meal truly memorable.</h2>
               <p class="mt-4 max-w-2xl text-lg leading-8 text-stone-300">
-                Visit us for a cozy evening, a business lunch, or an unforgettable celebration. We look forward to welcoming you.
+                Whether it is an intimate dinner, a celebration, or a business lunch, our team is ready to welcome you with thoughtful service and exceptional cuisine.
               </p>
+              <div class="mt-8 space-y-3 text-sm text-stone-300">
+                <p>📍 45 Gourmet Street, Downtown</p>
+                <p>📞 +880 1712-345678</p>
+                <p>✉️ hello@amikabistro.com</p>
+              </div>
             </div>
-            <div class="rounded-3xl bg-white p-6 text-stone-800">
-              <h3 class="text-xl font-semibold">Contact Details</h3>
-              <ul class="mt-4 space-y-3 text-sm text-stone-600">
-                <li>📍 45 Gourmet Street, Downtown</li>
-                <li>📞 +880 1712-345678</li>
-                <li>✉️ hello@amikabistro.com</li>
-              </ul>
-              <a href="mailto:hello@amikabistro.com" class="mt-6 inline-block rounded-full bg-orange-500 px-5 py-3 font-semibold text-white transition hover:bg-orange-600">
-                Book a Table
-              </a>
+            <div class="rounded-[1.5rem] bg-white p-6 text-stone-800 shadow-soft">
+              <h3 class="text-xl font-semibold">Request a Reservation</h3>
+              <form class="mt-5 space-y-4">
+                <input class="w-full rounded-xl border border-stone-200 px-4 py-3 outline-none ring-0" type="text" placeholder="Your Name" />
+                <input class="w-full rounded-xl border border-stone-200 px-4 py-3 outline-none ring-0" type="email" placeholder="Email Address" />
+                <input class="w-full rounded-xl border border-stone-200 px-4 py-3 outline-none ring-0" type="text" placeholder="Date & Time" />
+                <button type="button" class="w-full rounded-full bg-orange-500 px-5 py-3 font-semibold text-white transition hover:bg-orange-600">Book Now</button>
+              </form>
             </div>
           </div>
         </div>
